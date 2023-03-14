@@ -1,13 +1,13 @@
 //
-//  Logger.m
+//  NKLogger.m
 //  NKTestOCLib
 //
 //  Created by Van Zhang on 2023/3/9.
 //
 
-#import "Logger.h"
+#import "NKLogger.h"
 
-@implementation Logger
+@implementation NKLogger
 + (void)logWithString:(NSString *)log{
     NSLog(@"Log:%@",log);
     #if DEBUG
