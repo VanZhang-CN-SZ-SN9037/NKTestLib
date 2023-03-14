@@ -92,7 +92,6 @@ Pod::Spec.new do |spec|
   #spec.source_files  = "Classes", ".//Classes/*.{c,h,m,mm,swift}"
   #spec.exclude_files = "Classes/Exclude"
   spec.prefix_header_contents = '#import <UIKit/UIKit.h>'
-  spec.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -138,19 +137,19 @@ Pod::Spec.new do |spec|
   #spec.dependency "Alamofire", "~>5"
 
   # ――― Sub Spec Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.subspec 'Network' do |n|
-    n.source_files = 'Classes/Network/**/*'
-    n.dependency 'Alamofire'
-    n.dependency 'SDWebImage'
-  end
+  # spec.subspec 'Network' do |n|
+  #   n.source_files = 'Classes/Network/**/*'
+  #   n.dependency 'Alamofire'
+  #   n.dependency 'SDWebImage'
+  # end
 
-  spec.subspec 'Extension' do |e|
-    e.source_files = 'Classes/Extension/**/*'
-  end
+  # spec.subspec 'Extension' do |e|
+  #   e.source_files = 'Classes/Extension/**/*'
+  # end
 
-  spec.subspec 'Plugin' do |p|
-    p.source_files = 'Classes/Plugin/**/*'
-  end
+  # spec.subspec 'Plugin' do |p|
+  #   p.source_files = 'Classes/Plugin/**/*'
+  # end
   
   spec.subspec 'CommerceUI' do |c|
     c.source_files = 'Classes/CommerceUI/**/*'
