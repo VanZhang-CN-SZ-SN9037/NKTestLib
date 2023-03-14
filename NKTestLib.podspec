@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NKTestLib"
-  spec.version      = "0.0.1"
+  spec.version      = "0.1.0"
   spec.summary      = "This is a Pod Lib Demo for blog."
 
   # This description is used to generate tags and improve search results.
